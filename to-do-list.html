@@ -47,7 +47,7 @@
               Seletor de Cor
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a
               href="/contador.html"
               class="nav-link"
@@ -63,7 +63,7 @@
               Cronômetro
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a
               href="/to-do-list.html"
               class="nav-link"
@@ -80,39 +80,29 @@
 
       <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
         <div class="container">
-          <h1>Contador</h1>
+          <h1>To-do List</h1>
           <p class="lead">
-            Utilize os botões para incrementar/decrementar
-            a contagem.
+            Utilize o botão "Adicionar" para adicionar tarefas.
+            Cada tarefa pode ser marcada como feita e desmarcada também.
+            Ainda, cada tarefa pode ser excluída.
           </p>
         </div>
       </div>
 
-      <div class="container text-center">
+      <div
+        id="lista-tarefas"
+        class="container text-center"
+      >
         <div class="row justify-content-xl-center">
-          <div class="col-12 col-sm-6 col-xl-3 text-sm-right form-group order-2 order-sm-1">
+          <div class="col form-group">
             <button
-              id="decrementar"
-              type="button" class="btn btn-danger form-control"
-            >
-              <i class="bi bi-dash-circle-fill"></i>
-              1
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-xl-3 text-sm-left form-group order-1 order-sm-2">
-            <button
-              id="incrementar"
+              id="adicionar"
               type="button" class="btn btn-success form-control"
-            >
+            >s
               <i class="bi bi-plus-circle-fill"></i>
-              1
+              Adicionar tarefa
             </button>
           </div>
-        </div>
-        <div class="row">
-          <output class="col display-1 font-weight-bold">
-            0
-          </output>
         </div>
       </div>
 
@@ -135,7 +125,7 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  <script src="js/contador.js"></script>
+  <script src="js/to-do-list.js"></script>
 </body>
 
 </html>
