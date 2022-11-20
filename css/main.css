@@ -261,3 +261,6 @@ textarea {
   }
 }
 
+.btn.btn-warning {
+  color: white;
+}
